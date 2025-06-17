@@ -20,17 +20,17 @@ import { SHModal } from 'react-modal-sh-modal';
 import 'react-modal-sh-modal/dist/modal.css';
 
 function App() {
-	const [isOpen, setIsOpen] = React.useState(false);
+ const [isOpen, setIsOpen] = React.useState(false);
 
-	return (
-		<>
-			<button onClick={() => setIsOpen(true)}>Ouvrir la modale</button>
-			<SHModal isOpen={isOpen} onClose={() => setIsOpen(false)}>
-				<h2>Modale ouverte</h2>
-				<p>Ceci est un contenu de test.</p>
-			</SHModal>
-		</>
-	);
+ return (
+  <>
+   <button onClick={() => setIsOpen(true)}>Ouvrir la modale</button>
+   <SHModal isOpen={isOpen} onClose={() => setIsOpen(false)}>
+    <h2>Modale ouverte</h2>
+    <p>Ceci est un contenu de test.</p>
+   </SHModal>
+  </>
+ );
 }
 ```
 
