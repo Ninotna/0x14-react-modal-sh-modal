@@ -1,20 +1,27 @@
 {
-  "name": "0x14-react-modal-sh-modal",
+  "name": "react-modal-sh-modal",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Composant React de modale personnalisée",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "README.md"],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "vite build",
+    "prepublishOnly": "npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Ninotna/0x14-react-modal-sh-modal.git"
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Ninotna/0x14-react-modal-sh-modal/issues"
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.1.0",
+    "vite": "^5.2.0"
   },
-  "homepage": "https://github.com/Ninotna/0x14-react-modal-sh-modal#readme"
+  "author": "Antonin Noyelle",
+  "license": "MIT"
 }
