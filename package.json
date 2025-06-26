@@ -1,16 +1,18 @@
 {
   "name": "react-modal-sh-modal",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Composant React de modale personnalisée",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "exports": {
     ".": {
       "import": "./dist/index.js"
-    }
+    },
+    "./dist/modal.css": "./dist/modal.css"
   },
   "files": [
     "dist",
+    "dist/modal.css",
     "README.md"
   ],
   "scripts": {
