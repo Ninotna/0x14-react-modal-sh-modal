@@ -1,6 +1,6 @@
 {
   "name": "react-modal-sh-modal",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Composant React de modale personnalisée",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
