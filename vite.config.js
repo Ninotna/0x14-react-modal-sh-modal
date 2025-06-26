@@ -16,6 +16,12 @@ export default defineConfig({
 				globals: {
 					react: 'React',
 					'react-dom': 'ReactDOM'
+				},
+				assetFileNames: (assetInfo) => {
+					if (assetInfo.name === 'style.css') {
+						return 'modal.css'; // 🔁 renommer le fichier CSS de sortie
+					}
+					return assetInfo.name;
 				}
 			}
 		}
